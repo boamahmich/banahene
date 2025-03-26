@@ -1,0 +1,186 @@
+body {
+    background-image: url('360_F_986259339_K4vzlGXCbslqdsZNLf8cqdTHd5nvGplI.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: left;
+    font-weight: bold;
+    margin: 0 0 20px;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    width: 768px;
+    max-width: 100%;
+    min-height: 500px;
+    background-image: url('younggirl.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+                0 10px 10px rgba(0,0,0,0.22);
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active {
+    transform: translateX(50%);
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(50%);
+    opacity: 1;
+    z-index: 5;
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    color: #333;
+    text-decoration: none;
+}
+
+.form-group {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-group label {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: #999;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    background: #fff;
+    padding: 0 5px;
+    color: #333;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    background: #ff4b2b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.toggle-container {
+    margin-top: 20px;
+}
+
+.toggle {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.toggle:hover {
+    color: #555;
+}
+
+.forgot-password {
+    margin: 15px 0;
+}
+
+.forgot-password a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Kidi Joy</title>
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <h1>WELCOME</h1>
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form id="loginForm">
+                <div class="social-container">
+                    <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://support.google.com/answer/2451065?hl=en"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="https://www.linkedin.com/login"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+                <span class="icon">Login with account</span>
+                <div class="form-group">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="loginEmail" required />
+                    <label for="loginEmail">Email</label>
+                    <div class="error" id="loginEmailError">Please enter a valid email</div>
+                </div>
+                <div class="form-group">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="loginPassword" required />
+                    <label for="loginPassword">Password</label>
+                    <div class="error" id="loginPasswordError">Password must be at least 6 characters</div>
+                </div>
+                <div class="forgot-password">
+                    <a href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DDesktop">Forgot your password?</a>
+                </div>
+                <button type="submit">Sign In</button>
+                <div class="toggle-container">
+                    <button type="button" class="toggle" id="signUpToggle">Don't have an account? Sign Up</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container sign-up-container">
+            <form id="registerForm">
+                <div class="social-container">
+                    <a href="https://www.facebook.com/login.php/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://accounts.google.com/"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="https://www.linkedin.com/login"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+                <span>or use your email for registration</span>
+                <div class="form-group">
+                    <input type="text" id="registerName" required />
+                    <label for="registerName">Name</label>
+                    <div class="error" id="registerNameError">Please enter your name</div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="registerEmail" required />
+                    <label for="registerEmail">Email</label>
+                    <div class="error" id="registerEmailError">Please enter a valid email</div>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerPassword" required />
+                    <label for="registerPassword">Password</label>
+                    <div class="error" id="registerPasswordError">Password must be at least 6 characters</div>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerConfirmPassword" required />
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <div class="error" id="registerConfirmPasswordError">Passwords don't match</div>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div class="toggle-container">
+                    <button type="button" class="toggle" id="signInToggle">Already have an account? Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
